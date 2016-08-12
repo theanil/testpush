@@ -7,10 +7,10 @@
         id        = "com.test.mahaemp"
         version   = "1.4.5">
 
-    <name>Push Blu App</name>
+    <name>Push2 Blu App</name>
 
     <description>
-        Blu App
+        maha App
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
