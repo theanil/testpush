@@ -50,10 +50,12 @@
     <!-- Plugins -->
     <gap:plugin name="phonegap-plugin-push" source="npm" />
 
-    <plugin name="phonegap-plugin-push" spec="~1.6.0">
-      <variable name="SENDER_ID" value="1076985314352"/>
-    </plugin>
     
+   <gap:plugin name="phonegap-plugin-push" source="npm" spec="~1.6.2">
+            <params>
+            <param name="SENDER_ID" value="1076985314352" />
+            </params>
+    </gap:plugin> 
     <!--
     <plugin name="com.kumbe.phonegap.zoom.zoomcontrol" spec="0.1.8" source="pgb" />
     <plugin name="com.teamnemitoff.phonedialer" spec="0.3.0" source="pgb" />
