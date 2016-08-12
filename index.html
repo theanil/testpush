@@ -11,6 +11,7 @@
 <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;  font-src * https://fonts.gstatic.com https://fonts.gstatic.com; script-src 'self' http://my.bluapps.in 'unsafe-inline' 'unsafe-eval'; object-src 'self' http://my.bluapps.in; "/>
 
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<script type="text/javascript" charset="utf-8" src="push.js"></script>
 			
 <script type="text/javascript" charset="utf-8" src="js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -71,19 +72,9 @@ document.addEventListener('DOMContentLoaded', loaded, false);
 
        alert('ready');
 
-
-
- }	
-//alert('hello');
-
-    //$("#username2").val('aaa');
-
        var push = PushNotification.init({
 	    android: {
 	        senderID: "1076985314352"
-	    },
-	    browser: {
-	        pushServiceURL: 'http://push.api.phonegap.com/v1/push'
 	    },
 	    ios: {
 	        alert: "true",
@@ -115,6 +106,14 @@ document.addEventListener('DOMContentLoaded', loaded, false);
 	});
 
 	alert('test');
+
+
+ }	
+//alert('hello');
+
+    //$("#username2").val('aaa');
+
+
 
     	 //$("#one").val('aa');
         </script>
