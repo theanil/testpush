@@ -49,6 +49,10 @@
 
     <!-- Plugins -->
     <gap:plugin name="phonegap-plugin-push" source="npm" />
+
+    <plugin name="phonegap-plugin-push" spec="~1.6.0">
+      <variable name="SENDER_ID" value="1076985314352"/>
+    </plugin>
     
     <!--
     <plugin name="com.kumbe.phonegap.zoom.zoomcontrol" spec="0.1.8" source="pgb" />
