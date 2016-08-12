@@ -71,6 +71,13 @@ document.addEventListener('DOMContentLoaded', loaded, false);
 
        alert('ready');
 
+
+
+ }	
+//alert('hello');
+
+    //$("#username2").val('aaa');
+
        var push = PushNotification.init({
 	    android: {
 	        senderID: "1076985314352"
@@ -88,6 +95,8 @@ document.addEventListener('DOMContentLoaded', loaded, false);
 
 	push.on('registration', function(data) {
 	    // data.registrationId
+
+	    alert(data.registrationId);
 	});
 
 	push.on('notification', function(data) {
@@ -101,14 +110,11 @@ document.addEventListener('DOMContentLoaded', loaded, false);
 
 	push.on('error', function(e) {
 	    // e.message
+
+	    alert(e.message);
 	});
 
- }	
-//alert('hello');
-
-    //$("#username2").val('aaa');
-
-
+	alert('test');
 
     	 //$("#one").val('aa');
         </script>
