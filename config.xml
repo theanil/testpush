@@ -55,6 +55,8 @@
             <param name="SENDER_ID" value="1076985314352" />
             </params>
     </gap:plugin> 
+
+     <preference name="android-build-tool" value="gradle" />
     <!--
     <plugin name="com.kumbe.phonegap.zoom.zoomcontrol" spec="0.1.8" source="pgb" />
     <plugin name="com.teamnemitoff.phonedialer" spec="0.3.0" source="pgb" />
