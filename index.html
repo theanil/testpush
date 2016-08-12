@@ -72,14 +72,20 @@ document.addEventListener('DOMContentLoaded', loaded, false);
        alert('ready');
 
  }	
+//alert('hello');
 
-	var push = PushNotification.init({ "android": {"senderID": "1076985314352"},
+    //$("#username2").val('aaa');
+
+
+    var push = PushNotification.init({ "android": {"senderID": "1076985314352"},
          "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 
     push.on('registration', function(data) {
         // data.registrationId
 
-        $("#one").val(data.registrationId);
+        //$("#one").val(data.registrationId);
+
+        alert(data.registrationId);
     });
 
     push.on('notification', function(data) {
@@ -94,9 +100,10 @@ document.addEventListener('DOMContentLoaded', loaded, false);
     push.on('error', function(e) {
         // e.message
 
-        $("#one").val(e.message);
+       // $("#one").val(e.message);
+       alert(e.message);
     });
-
+    	 //$("#one").val('aa');
         </script>
 
 	
@@ -118,29 +125,11 @@ document.addEventListener('DOMContentLoaded', loaded, false);
 		<div class="login">
 			<form>
 
-				
-			 <select name="club_select" id="club_select" class="selectbook" data-role="none">
-				<option value="" disabled selected>Select Club *</option>
-			</select>
-			
-				<input name="username2" id="username2" type="tel" class="user active" maxlength="10" placeholder="Mobile No:" data-role="none"  />
-				<input name="password" id="password" type="tel" maxlength="4" class="lock active" placeholder="OTP No/Password:" data-role="none" onfocus="changeToPassword('password');" />			  
+							
+				<input name="username2" id="username2" type="tel" class="user active" maxlength="10" placeholder="" data-role="none"  />
+				<input name="password" id="password" type="tel" maxlength="4" class="lock active" placeholder="" data-role="none" />			  
 
-			<div class="forgot">
-				<div class="login-para">
-				<br/>	
-				<p><a href="#forgotpasswd"> Forgot Password? </a></p>
 
-				<input type="text" id="one" name="one">
-				 </div><br/>
-				<div class="clear"> </div>
-			</div>
-			<div class="login-bwn">
-			
-			<!--<a href="#welcome"><input type="submit" id="submit_login1" name="submit_login1" value="SIGN IN" class="right signin" data-role="none" /></a>-->
-
-			  <input type="submit" id="submit_login2" name="submit_login2" value="SIGN IN" class="right signin" data-role="none" />
-			   <!--<a href="#signup"><input type="submit" value="SIGN UP" class="left signup" data-role="none" /></a>-->
 			</div>
 			<div class="clear"> </div>
 			</form>
