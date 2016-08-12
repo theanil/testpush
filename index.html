@@ -71,38 +71,45 @@ document.addEventListener('DOMContentLoaded', loaded, false);
 
        alert('ready');
 
+       var push = PushNotification.init({
+	    android: {
+	        senderID: "1076985314352"
+	    },
+	    browser: {
+	        pushServiceURL: 'http://push.api.phonegap.com/v1/push'
+	    },
+	    ios: {
+	        alert: "true",
+	        badge: "true",
+	        sound: "true"
+	    },
+	    windows: {}
+	});
+
+	push.on('registration', function(data) {
+	    // data.registrationId
+	});
+
+	push.on('notification', function(data) {
+	    // data.message,
+	    // data.title,
+	    // data.count,
+	    // data.sound,
+	    // data.image,
+	    // data.additionalData
+	});
+
+	push.on('error', function(e) {
+	    // e.message
+	});
+
  }	
 //alert('hello');
 
     //$("#username2").val('aaa');
 
 
-    var push = PushNotification.init({ "android": {"senderID": "1076985314352"},
-         "ios": {"alert": "true", "badge": "true", "sound": "true"}, "windows": {} } );
 
-    push.on('registration', function(data) {
-        // data.registrationId
-
-        //$("#one").val(data.registrationId);
-
-        alert(data.registrationId);
-    });
-
-    push.on('notification', function(data) {
-        // data.message,
-        // data.title,
-        // data.count,
-        // data.sound,
-        // data.image,
-        // data.additionalData
-    });
-
-    push.on('error', function(e) {
-        // e.message
-
-       // $("#one").val(e.message);
-       alert(e.message);
-    });
     	 //$("#one").val('aa');
         </script>
 
