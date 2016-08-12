@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<!-- in.bluapps.webapp  // com.blu.webapp-->
+<!-- com.blu.webapp  // com.test.mahaemp-->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.blu.webapp"
+        id        = "com.test.mahaemp"
         version   = "1.4.5">
 
     <name>Push Blu App</name>
